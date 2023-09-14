@@ -99,13 +99,13 @@ const Row = ({
 
   return (
     <RowComp style={[styles.row, eventStyle]} onPress={pressAction}>
-      <EventTime time={time} style={timeContainerStyle} />
+      {/* <EventTime time={time} style={timeContainerStyle} /> */}
       <EventIcon
         icon={icon}
         iconStyle={iconContainerStyle}
         lineStyle={lineStyle}
       />
-      <Event style={contentContainerStyle}>
+      <Event style={[contentContainerStyle,{flex:1}]}>
         {title}
         {description}
       </Event>
